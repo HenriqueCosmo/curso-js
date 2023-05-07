@@ -18,14 +18,19 @@
     <!--DOM (document object Model) é um modelo de objetos para documentos -->
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em mim</div>
+    <p >Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
 </body>
 
 <script>
-
-    
-
+   var p1 = window.document.getElementsByTagName('p')[0]
+   p1.style.color = 'blue'
+   var p2 = window.document.getElementsByTagName('p')[1]
+   p2.style.textAlign = 'right'
+  /* var d = window.document.getElementById('msg')
+   d.style.background = 'green' */
+    var d = window.document.querySelector('div#msg')
+    d.style.background = 'blue'
 </script>
 
 </html>
