@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógicos</title>
+</head>
+<body>
+    <script>
+        /*
+        //true && true = true
+        if(2 == 2 && 3 >=1 ){
+            document.write('Verdadeiro <br>')
+        }
+
+        //true && true && false = false
+        if (2 == 2 && 4 < 5 && 'e' == 'j'){
+            document.write('Verdadeiro <br>')
+        } else {
+            document.write('Falso <br>')
+        }
+
+        //true || false = true
+        if (2 > 4 || 8 < 20){
+            document.write('Verdadeiro <br>')
+        }
+
+        //false || false = false
+        if(2 != 2 || 4 > 10){
+            document.write('Verdadeiro <br>')
+        } else {
+            document.write('Falso <br>')
+        }
+
+        //false converte para true = true
+        if (!(5 == 2)){
+            document.write('Verdadeiro <br>')
+        }else{
+            document.write('Falso <br>')
+        }
+
+        // true converte para false = false
+        if(!(3 ==3 )){
+            document.write('Verdadeiro <br>')
+        } else {
+            document.write('Falso <br>')
+        }*/
+
+
+        var nota = prompt('Digite a nota do aluno: ')
+        var faltas = prompt('Digite a quantidade de faltas do aluno: ')
+
+        var media = 7
+        var maxFaltas = 15
+
+        /*
+        if(nota >=7 && faltas <= maxFaltas){
+            document.write('Aluno aprovado!')
+        }else{
+            document.write('Aluno Reprovado!')
+        }
+        */
+
+        var resultado = (nota >=7 && faltas <= maxFaltas) ? 'Aprovado' : 'Reprovado'
+        document.write(resultado)
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
