@@ -6,6 +6,31 @@
     <title>Escopo de Variaveis</title>
 </head>
 <body>
-    
+    <script>
+        //3 escopos: global, função  e bloco
+        var serie = 'Friends'
+        //variaveis globais são de uso geral no programa 
+        if (true){
+            var serie2 = 'game of thrones'
+            document.write(serie)
+            //variaveis de bloco usam as de escopo global e fazem hoisting para que possam ser usadas em funções ou no escopo global 
+            //caso estejam dentro do escopo de função, as variaveis de bloco fazem hoisting para a função 
+        }
+        document.write(serie2)
+
+        document.write('<br>')
+
+        function x(){
+            //variaveis declaradas dentro da função não são elevadas, causa erro de código se forem criadas e chamadas fora da função
+            document.write(serie)
+            document.write(serie2)
+        }
+        
+        x()
+        document.write('<br>')
+        document.write(serie3)
+
+
+    </script>
 </body>
 </html>
