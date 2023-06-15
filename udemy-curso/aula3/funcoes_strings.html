@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Strings</title>
+</head>
+<body>
+    <script>
+        //Funções Nativas para manipulação de strings
+        document.write('Henrique'.length, "<br>")//função que conta a quantidade de caracteres
+        document.write('Henrique'.charAt(3),'<br>')//função que retorna o caracter selecionado da string
+        var nome = 'Henrique'
+        document.write(nome.indexOf('q','<br>'))//retorna a posição da primeira vez que um caractere aparce, caso não exista o caractere, retorna o valor -1 
+        document.write('<br>')
+        document.write(nome.replace('Henrique', 'Cosmo'))
+        document.write('<br>')
+        document.write(nome.substr(3,7))//retorna caracteres que estão no intervalo da opção selecionada
+        document.write('<br>')
+        document.write(nome.toLowerCase())//transforma tudo em minusculo
+        document.write('<br>')
+        document.write(nome.toUpperCase())//transforma tudo em maiusculo
+        document.write('<br>')
+        document.write('----' + nome.trim() + '----')//retira espaços entre strings
+    </script>
+</body>
+</html>
