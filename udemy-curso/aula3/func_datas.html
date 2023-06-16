@@ -7,12 +7,68 @@
 </head>
 <body>
     <script>
-        var data = new Date()
+       /* var data = new Date()
         document.write(data.getDate())
         document.write('/')
         document.write(data.getMonth() +1 )
         document.write('/')
-        document.write(data.getFullYear())
+        document.write(data.getFullYear())*/
+
+        /*
+        //adicionar e remover dias
+        var data = new Date()
+        document.write(data.toString())
+        data.setDate(data.getDate() + 1)//adiciona um dia considerando a fata atual do sistema operacional 
+        document.write('<hr>')
+        document.write(data.toString())
+        document.write('<br>')
+        document.write('<br>')
+        document.write('<hr>')
+
+
+        //adicionar e remover meses
+        document.write(data.toDateString())
+        data.setMonth(data.getMonth() +1)
+        document.write('<hr>')
+        document.write(data.toString())
+        document.write('<br>')
+        document.write('<br>')
+        document.write('<hr>')
+
+
+        //adicionar e remover anos
+        document.write(data.toString())
+        data.setFullYear(data.getFullYear() + 1)
+        document.write('<hr>')
+        document.write(data.toString())*/
+
+
+        var data1 = new Date(2023,5,16)
+        var data2 = new Date(2023,11,3)
+        document.write(data1.toString()) //transforma as dadas em textos
+        document.write('<hr>')
+        document.write(data2.toString())
+        document.write('<br>')
+        document.write('<br>')
+        document.write(data1.getTime()) //traz a quantidade de milissegundos da data referente a 1 de janeiro de 1970
+        document.write('<hr>')
+        document.write(data2.getTime())
+        document.write('<br>')
+        document.write('<br>')
+
+        var diferenca = (Math.abs(data1.getTime()-data2.getTime())) //retorna o valor absoluto do calculo
+        document.write(diferenca)
+        document.write('<hr>')
+        var dia_milissegundos = (1*24*60*60*1000)
+        document.write('Um dia tem : ' + dia_milissegundos + ' Milissegundos')
+        document.write('<hr>')
+        document.write(Math.ceil(diferenca / dia_milissegundos))//arredonda um número para cima
+
+
+
+        
+
+
 
         
 
