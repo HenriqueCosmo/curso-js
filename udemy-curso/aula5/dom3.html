@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            
+            width: 250px;
+            height: 250px;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <h1>Manipulando Estilos</h1>
+    <button type="button" onclick="mudaEstilo('#FF0000')">Vermelho</button>
+    <button type="button" onclick="mudaEstilo('#00FF00')">Verde</button>
+    <button type="button" onclick="mudaEstilo('#0000FF')">Azul</button>
+    <hr>
+    <div id="cor"> </div>
+
+
+
+    <script>
+        //função que resgata o código decimal do parametro conforme a opção clicada no evento onclick
+        function mudaEstilo(cordeFundo){
+            document.getElementById('cor').style.background = cordeFundo
+
+        }
+        
+    </script>
 </body>
 </html>
