@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <input onfocus="console.log('recebeu o foco')" onblur="console.log('perdeu o foco')" type="text"><!--onfocus é acionado quando um elemento recebe o foco do evento,on blur é acionado quando o evento perde o foco -->
+
+    <select onchange="console.log('Estado modificado!')"> <!--onchange é usado quando um elemento sofre uma mudança de estado-->
+        <option>-----Selecione-----</option>
+        <option value="1">Primeira opção</option>
+        <option value="2">Segunda opção</option>
+
+    </select>
+</body>
+</html>
