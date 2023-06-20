@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="entrada" placeholder="Digite um caractere aqui" onkeyup="distribuirCacartere()">
+    <hr>
+    <span>Letras: </span>
+    <input type="text" id="letras" disabled="disabled">
+    
+    <span>Números: </span>
+    <input type="text" id="numeros" disabled="disabled">
+
+
+    <script>
+        function distribuirCacartere(){
+
+            //seleciona o valor digitado
+            var caractere = document.getElementById('entrada').value
+
+            //limpa o campo de digitação
+            document.getElementById('entrada').value = ''
+
+            //limpa os espaços em branco nas extremidades da string
+            caractere.trim()
+
+            switch(caractere){
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                //adiciona o caractere no campo referente a números
+                document.getElementById('numeros').value += caractere
+                    break;
+                default:
+                //adiciona o caractere no campo referente a números
+                document.getElementById('letras').value += caractere
+
+
+            }
+            
+        }
+
+
+    
+    </script>
+</body>
+</html>
