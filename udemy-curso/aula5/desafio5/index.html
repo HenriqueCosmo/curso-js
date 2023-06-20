@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Dom</title>
+</head>
+<body>
+    <!--
+        1) Crie um campo <input type="text"> e aplique os seguintes controles com base nos 
+        eventos abaixo:
+        • No evento de foco modifique o background do input para amarelo.
+        • Quando o campo perder o foco, recupere o seu respectivo valor e:
+        o Caso o conteúdo contido no campo tenha menos de 3 caracteres o mesmo 
+        deve ter seu background alterado para vermelho.
+        o Caso o conteúdo contido no camp
+    -->
+
+    <input type="text" id="caixa" onfocus="mudacor()" onblur="corAnterior()">
+
+
+
+
+    <script>
+        function mudacor(){
+        document.getElementById('caixa').style.background = 'yellow'
+        }
+
+        function corAnterior(){
+            var valorCampo = document.getElementById('caixa').value
+
+            if (valorCampo.length < 3){
+                document.getElementById('caixa').style.background = 'red'
+            } else{
+                document.getElementById('caixa').style.background = 'green'
+            }
+        }
+
+
+    </script>
+</body>
+</html>
