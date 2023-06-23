@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisar elementos </title>
+</head>
+<body>
+    <script>
+        var lista_frutas = ['Banana', 'Maçã', 'Uva', 'Morango']
+        //retorna a posição em que está contido o valor pesquisado dentro do array
+        //se o valor não exite no array, o valor retornado será -1
+        console.log(lista_frutas.indexOf('Morango'))
+        //a pesquisa que é realizada é case sensitive, ou seja, a pesquisa e o item a ser pesquisado tem que conter os mesmo valores e caraceters 
+        //também é possivel usar uma variavel auxiliar para realizar as pesquisas e manter o código  mais limpo 
+
+        if(lista_frutas.indexOf('Banana') === -1){
+            console.log('Elemento não exite')
+        } else{
+            console.log(`Elemento existe e está na posição ${lista_frutas.indexOf('Banana')}`)
+        }
+        if(lista_frutas.indexOf('Abacate') === -1){
+            console.log('Elemento não exite')
+        } else{
+            console.log(`Elemento existe e está na posição ${lista_frutas.indexOf('Abacate')}`)
+        }
+    </script>
+</body>
+</html>

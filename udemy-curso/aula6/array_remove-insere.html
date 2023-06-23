@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remover e Inserir</title>
+</head>
+<body>
+    <script>
+
+        var lista_frutas = ['Banana', 'Morango', 'Uva', 'Maçã']
+        var lista_pessoas = ['Maria', 'João', 'Vitor', 'Laura']
+        var lista_coisas = [lista_frutas,lista_pessoas]
+
+        console.log(lista_coisas)
+
+        lista_frutas[4] = 'Abacate'
+        console.log(lista_frutas)
+
+        //incluir item no fim do array
+        lista_frutas.push('Pessego')
+
+        //incluir item no final do array dentro do array 
+        lista_coisas[0].push('Pêra')
+
+        //incluir item no inicio do array dentro do array 
+        lista_coisas[1].unshift('Ana')
+
+        console.log(lista_pessoas)
+        //incluir item no inicio do array 
+        lista_frutas.unshift('Abacaxi')
+        console.log(lista_frutas)
+
+        //excluir item do fim do array
+        lista_frutas.pop()
+
+        //exclui item do inicio do array
+        lista_frutas.shift()
+        console.log(lista_frutas)
+        console.log(lista_coisas)
+
+
+    </script>
+</body>
+</html>
