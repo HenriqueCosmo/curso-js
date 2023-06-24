@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenação de Array</title>
+</head>
+<body>
+    <script>
+        var lista_frutas = ['Uva', 'Abacate', 'Morango', 'Banana']
+
+        //metodo sort realiza uma ordenação dos itens do array em ordem alfanumérica  
+        console.log(lista_frutas.sort())
+
+
+        var lista_numeros = [48,6,3,2,54,8,42,834,70,2]
+        console.log(lista_numeros.sort(ordemNumeros))
+
+        //função padrão para o método sort para ordenação de números 
+        //se os elementos dentro do array forem números em formato de string, a função ainda irá executar, mas se houver uma string de fato, sem números, ocorrera erro 
+        function ordemNumeros(a,b){
+            return a - b
+            // < 0 = a ordenado antes de b
+            // > 0 = b ordenado antes de a
+            // == a ordem é mantida 
+        }
+
+    </script>
+</body>
+</html>
