@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+
+    <script>
+        var objetos = ['Cadeira','Mesa', 'Martelo']
+
+        function adicionar(){
+           var objeto =  document.getElementById('caixaTexto').value
+           
+           if (objeto === ''){
+
+            return alert('Digite um valor')
+
+           }else{
+
+                if (objetos.indexOf(objeto) !== -1){
+                alert('objeto já adicionado')
+
+                } else{
+                    objetos.push(objeto)
+                    console.log(objetos)
+                }
+
+            }
+                      
+        }
+
+
+        function ordenar(){
+            objetos.sort()
+            console.log(objetos)
+        }
+
+        
+
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="caixaTexto">
+        <button id="adc" onclick="adicionar()">Adicionar</button>
+        <button id="ord" onclick="ordenar()">Ordenar</button>
+    </form>
+
+  
+</body>
+</html>
