@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laçõs</title>
+</head>
+<body>
+    <script>
+        var lista_convidados = ['Jorge', 'Ana', 'Maria','Jose','Henrique']
+        //quando é utlizado o in, toda a posição é percorrida até que chegue em undefined, sem criar um loop infinito 
+        console.log(lista_convidados)
+        for(var x in lista_convidados){
+            //aqui está sendo acessado o valor do indice conforme o in vai percorrendo o array 
+            //como o x percorre todo o array para retornar o indice, mesmo que seja de um valor diferente, ele irá retornar sem erro,tanto o indice quanto o valor
+            console.log(`Índice: ${x} Valor: ${lista_convidados[x]}`)
+        }
+    </script>
+</body>
+</html>

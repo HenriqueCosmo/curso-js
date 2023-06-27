@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=2, initial-scale=1.0">
+    <title>ForEach</title>
+</head>
+<body>
+    <script>
+        var listaFuncionarios = ['Viviane', 'Rosangela', 'Lucas', 'Fernanda','Miguel']
+        //é possivel atribuir funções dentro de variaves para uso, para deixar o código mais legivel em algumas ocasioes  
+        //forEach atua somente em valores numericos de 0 pra cima, sem considerar strings ou valores negativos 
+        listaFuncionarios.forEach(function(valor,indice,array){
+            console.log(`indice: ${indice} valor ${valor}`)
+            document.write(listaFuncionarios)
+        
+            if(valor == 'Lucas'){
+                array[indice] ='João'
+            }
+            console.log(listaFuncionarios)
+        })
+    </script>
+</body>
+</html>
