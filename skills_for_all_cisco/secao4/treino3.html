@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions</title>
+    <script>
+        let NumberOne = Number(prompt('Digite um numero: '));
+        let NumberTwo = Number(prompt('Digite outro numero: '));
+        let operador = prompt('Digite um operador (+,-,*,/): ');
+        let result = '';
+
+
+        if (!Number.isNaN(NumberOne) && !Number.isNaN(NumberTwo)){
+            switch (operador){
+                case '+':
+                    result = NumberOne + NumberTwo;
+                    break;
+                case '-':
+                    result = NumberOne - NumberTwo;
+                    break;
+                case '*':
+                    result = NumberOne * NumberTwo;
+                    break;
+                case '/': 
+                    result = NumberOne / NumberTwo;
+                    break;
+                default: 
+                    result = "Error: operand invalid ";    
+            }
+        } else{
+            result = "Error: at least one of the entered values is not a number"
+        }
+        alert(result)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
